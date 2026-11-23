@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Пити воду",
+    "category": "Здоров’я",
+    "frequency": "daily",
+    "icon": "💧",
+    "completedDates": []
+  },
+  {
+    "id": "2",
+    "name": "Читати 20 хвилин",
+    "category": "Навчання",
+    "frequency": "daily",
+    "icon": "📚",
+    "completedDates": []
+  },
+  {
+    "id": "3",
+    "name": "Ранкова зарядка",
+    "category": "Спорт",
+    "frequency": "daily",
+    "icon": "🏃",
+    "completedDates": []
+  },
+  {
+    "id": "4",
+    "name": "Планувати день",
+    "category": "Інше",
+    "frequency": "daily",
+    "icon": "📝",
+    "completedDates": []
+  }
+]

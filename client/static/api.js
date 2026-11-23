@@ -1,0 +1,1 @@
+export async function getCatalog(){const response=await fetch('../server/data/items.json');if(!response.ok)throw Error('Помилка запиту');return await response.json()}

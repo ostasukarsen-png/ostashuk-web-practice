@@ -1,0 +1,189 @@
+{
+  "info": {
+    "name": "HabitFlow API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base",
+      "value": "http://localhost:4000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get all",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get one",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items/1",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Медитація\", \"category\": \"Здоров’я\", \"frequency\": \"daily\", \"icon\": \"🧘\"}"
+        }
+      }
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items/1",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Пити воду\", \"category\": \"Здоров’я\", \"frequency\": \"daily\"}"
+        }
+      }
+    },
+    {
+      "name": "Toggle",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items/1/toggle",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items",
+            "1",
+            "toggle"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"date\": \"2026-11-23\"}"
+        }
+      }
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/items/1",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "items",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base}}/api/contact",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "contact"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Тест\", \"email\": \"test@example.com\", \"phone\": \"+380991234567\", \"topic\": \"help\", \"message\": \"Тестове повідомлення\", \"consent\": true}"
+        }
+      }
+    }
+  ]
+}
